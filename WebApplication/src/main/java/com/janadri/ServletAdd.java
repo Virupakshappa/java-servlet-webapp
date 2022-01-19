@@ -15,6 +15,6 @@ public class ServletAdd extends HttpServlet {
 
 		int k=i+j;
 		
-		res.sendRedirect("sq?k="+k);
+		res.sendRedirect("sq?k="+k);  //URL rewriting
 	}
 }
