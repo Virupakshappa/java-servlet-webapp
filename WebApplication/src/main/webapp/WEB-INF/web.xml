@@ -10,4 +10,15 @@
 <servlet-name>addSvlt</servlet-name>
 <url-pattern>/add</url-pattern>
 </servlet-mapping>
+
+<servlet>
+<servlet-name>sqSvlt</servlet-name>
+<servlet-class>com.janadri.ServletSq</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>sqSvlt</servlet-name>
+<url-pattern>/sq</url-pattern>
+</servlet-mapping>
+
 </web-app>
