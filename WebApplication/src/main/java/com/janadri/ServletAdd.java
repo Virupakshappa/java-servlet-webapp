@@ -2,7 +2,6 @@ package com.janadri;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,13 +15,6 @@ public class ServletAdd extends HttpServlet {
 
 		int k=i+j;
 		
-		req.setAttribute("k", k);
-		
-		RequestDispatcher rd = req.getRequestDispatcher("sq");
-		/*
-		 *Forward method forwards a request from a servlet to another resource (servlet, JSP file,
-		 *or HTML file) on the server.
-		 */
-		rd.forward(req, res);
+		res.sendRedirect("sq?k="+k);
 	}
 }
