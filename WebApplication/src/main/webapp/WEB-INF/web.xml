@@ -5,6 +5,7 @@
 <servlet-name>homeSvlt</servlet-name>
 <servlet-class>com.janadri.MyServlet</servlet-class>
 
+<!--  <init-param> part will execute while using ServletConfig -->
 <init-param>
 <param-name>name</param-name>
 <param-value>Janadri</param-value>
